@@ -22,24 +22,24 @@ export default function FoundingCohort() {
 
             <div className="relative mb-5 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-accent-2">
               <Rocket className="h-3.5 w-3.5" />
-              Launching {SITE.launchDate}
+              Launching {SITE.launchDate} · 100% Free
             </div>
 
             <h2 className="relative text-3xl font-bold text-white sm:text-4xl">
-              We're brand new — and that's the opportunity
+              We're brand new — so the founding cohort is free
             </h2>
             <p className="relative mx-auto mt-4 max-w-xl text-zinc-400">
               RemoteClose hasn't run a cohort yet, so we don't have
-              student reviews to show you. What we do have is a complete
-              curriculum and a small founding cohort starting{" "}
-              {SITE.launchDate}. Join now and you'll help shape the
-              program — at founding-cohort pricing, before the reviews
-              roll in and spots get harder to come by.
+              student reviews to show you. In exchange for early access to
+              the full curriculum and live training, we're asking the{" "}
+              {SITE.launchDate} founding cohort for one thing: an honest
+              review once you've been through the program. No tuition,
+              no catch.
             </p>
 
             <div className="relative mt-7 flex items-center justify-center gap-2 text-sm text-zinc-500">
               <Sparkles className="h-4 w-4 text-accent" />
-              First come, first reviewed.
+              Free for the founding cohort only — future cohorts will be paid.
             </div>
           </div>
         </ScrollReveal>

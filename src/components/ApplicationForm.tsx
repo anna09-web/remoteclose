@@ -176,7 +176,7 @@ export default function ApplicationForm() {
       <div className="mx-auto max-w-2xl">
         <ScrollReveal className="mb-6 text-center">
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
-            Apply for the next cohort
+            Apply for the free founding cohort
           </h2>
           <p className="mt-4 text-zinc-400">
             A few quick steps. We review every application personally —
@@ -188,8 +188,9 @@ export default function ApplicationForm() {
           <div className="mx-auto flex max-w-md items-start gap-2.5 rounded-xl border border-amber-400/20 bg-amber-400/[0.06] px-4 py-3 text-left">
             <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0 text-amber-400" />
             <p className="text-xs leading-relaxed text-amber-200/90">
-              We only accept applicants who are a genuine fit for the
-              program. Spots per cohort are limited, so incomplete or
+              The founding cohort is free — in exchange, we only accept
+              applicants who are a genuine fit and willing to leave an
+              honest review. Spots are limited, so incomplete or
               low-effort applications are not reviewed.
             </p>
           </div>
@@ -344,7 +345,7 @@ export default function ApplicationForm() {
                             />
                             <Select
                               id="readyToInvest"
-                              label="Are you ready to invest in yourself to make this happen?"
+                              label="Are you ready to fully commit your time and effort to this program?"
                               value={values.readyToInvest}
                               onChange={(v) => update("readyToInvest", v)}
                               options={[

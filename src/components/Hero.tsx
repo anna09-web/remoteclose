@@ -51,7 +51,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-zinc-300"
         >
-          Premium Remote Sales Training
+          Premium Remote Sales Training · Free Founding Cohort
         </motion.span>
 
         <motion.h1
@@ -100,7 +100,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.6 }}
           className="mt-6 text-sm text-zinc-500"
         >
-          Founding cohort launches {SITE.launchDate} — limited spots
+          100% free for the founding cohort — launches {SITE.launchDate}, limited spots
         </motion.p>
       </div>
     </section>

@@ -19,10 +19,10 @@ interface Stat {
 // Pre-launch stats: no cohort has run yet, so these describe the program
 // itself rather than claiming past student outcomes.
 export const STATS: Stat[] = [
+  { label: "Cost for founding cohort", value: 0, prefix: "$" },
   { label: "Core modules", value: 6 },
   { label: "Spots in founding cohort", value: 25 },
   { label: "Weeks of live training", value: 4 },
-  { label: "Founding cohort number", value: 1, prefix: "#" },
 ];
 
 export const CURRICULUM = [
