@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import MagneticButton from "./MagneticButton";
 import ParticleBackground from "./ParticleBackground";
+import { SITE } from "../lib/content";
 
 const HEADLINE = "Become a Remote Closer. Work from anywhere. Get paid to sell.";
 
@@ -99,7 +100,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.6 }}
           className="mt-6 text-sm text-zinc-500"
         >
-          Limited spots per cohort
+          Founding cohort launches {SITE.launchDate} — limited spots
         </motion.p>
       </div>
     </section>

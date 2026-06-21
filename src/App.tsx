@@ -5,7 +5,7 @@ import Stats from "./components/Stats";
 import ProblemPromise from "./components/ProblemPromise";
 import Curriculum from "./components/Curriculum";
 import HowItWorks from "./components/HowItWorks";
-import Testimonials from "./components/Testimonials";
+import FoundingCohort from "./components/FoundingCohort";
 import ApplicationForm from "./components/ApplicationForm";
 import Footer from "./components/Footer";
 import Terms from "./pages/Terms";
@@ -21,7 +21,7 @@ function Landing() {
         <ProblemPromise />
         <Curriculum />
         <HowItWorks />
-        <Testimonials />
+        <FoundingCohort />
         <ApplicationForm />
       </main>
       <Footer />

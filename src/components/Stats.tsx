@@ -43,6 +43,9 @@ function Counter({
 export default function Stats() {
   return (
     <section id="results" className="relative px-6 py-16">
+      <p className="mb-6 text-center text-xs font-medium uppercase tracking-wider text-zinc-500">
+        The program, at a glance
+      </p>
       <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 md:grid-cols-4">
         {STATS.map((stat, i) => (
           <motion.div

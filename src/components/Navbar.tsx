@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const LINKS = [
   { label: "How it works", href: "#how-it-works" },
   { label: "Curriculum", href: "#curriculum" },
-  { label: "Results", href: "#results" },
+  { label: "The Program", href: "#results" },
   { label: "Apply", href: "#apply" },
 ];
 

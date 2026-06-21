@@ -21,7 +21,7 @@ npm run build
 
 - `src/components/` — page sections (Hero, Stats, Curriculum, ApplicationForm, etc.)
 - `src/pages/` — Terms of Use and Privacy Policy pages (hash-routed at `#/terms` and `#/privacy`)
-- `src/lib/content.ts` — editable site copy: stats, curriculum, testimonials, contact email
+- `src/lib/content.ts` — editable site copy: stats, curriculum, launch date, contact email
 - `src/lib/form.ts` — form submission backend config for the application form
 
 ## Connecting the application form backend

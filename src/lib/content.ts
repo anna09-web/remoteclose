@@ -5,13 +5,24 @@ export const SITE = {
   name: "RemoteClose",
   tagline: "The premium training program for high-ticket remote closers.",
   contactEmail: "aschnabelbuisness@gmail.com",
+  launchDate: "July 1st",
 };
 
-export const STATS = [
-  { label: "Students trained", value: 500, suffix: "+" },
-  { label: "Commissions closed", value: 2, prefix: "$", suffix: "M+" },
-  { label: "Countries represented", value: 30, suffix: "+" },
-  { label: "Average rating", value: 4.9, suffix: "★", decimals: 1 },
+interface Stat {
+  label: string;
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  decimals?: number;
+}
+
+// Pre-launch stats: no cohort has run yet, so these describe the program
+// itself rather than claiming past student outcomes.
+export const STATS: Stat[] = [
+  { label: "Core modules", value: 6 },
+  { label: "Spots in founding cohort", value: 25 },
+  { label: "Weeks of live training", value: 4 },
+  { label: "Founding cohort number", value: 1, prefix: "#" },
 ];
 
 export const CURRICULUM = [
@@ -66,23 +77,3 @@ export const STEPS = [
   },
 ];
 
-export const TESTIMONIALS = [
-  {
-    name: "Jordan M.",
-    role: "Remote Closer, SaaS",
-    quote:
-      "RemoteClose gave me the exact framework I needed. I landed my first remote closing role within six weeks.",
-  },
-  {
-    name: "Aleksa P.",
-    role: "High-Ticket Sales Rep",
-    quote:
-      "The objection-handling module alone paid for the program. My close rate doubled in the first month.",
-  },
-  {
-    name: "Priya S.",
-    role: "Independent Closer",
-    quote:
-      "I went from cold-emailing for free coaching calls to closing five-figure deals from my laptop, anywhere.",
-  },
-];
