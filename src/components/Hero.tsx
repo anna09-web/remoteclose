@@ -1,5 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import MagneticButton from "./MagneticButton";
+import ParticleBackground from "./ParticleBackground";
 
 const HEADLINE = "Become a Remote Closer. Work from anywhere. Get paid to sell.";
 
@@ -26,14 +27,19 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 pt-28 pb-20"
     >
-      {/* Animated background: grid + soft gradient glows */}
-      <div className="absolute inset-0 -z-10 grid-bg" aria-hidden="true" />
+      {/* Animated background: mouse-reactive particle network + soft gradient glows */}
+      <div className="absolute inset-0 -z-20 grid-bg" aria-hidden="true" />
+      <ParticleBackground />
       <div
         className="absolute -top-32 left-1/2 -z-10 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-accent/20 blur-[120px] animate-float-slow"
         aria-hidden="true"
       />
       <div
         className="absolute bottom-0 right-1/4 -z-10 h-[360px] w-[480px] rounded-full bg-blue-500/10 blur-[100px] animate-float-slow-rev"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-transparent to-base"
         aria-hidden="true"
       />
 
