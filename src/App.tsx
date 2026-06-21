@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FreeBanner from "./components/FreeBanner";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
@@ -14,6 +15,7 @@ import Privacy from "./pages/Privacy";
 function Landing() {
   return (
     <>
+      <FreeBanner />
       <Navbar />
       <main>
         <Hero />

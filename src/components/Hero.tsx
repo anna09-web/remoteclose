@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 pt-28 pb-20"
+      className="relative flex min-h-[100svh] items-center justify-center overflow-hidden px-6 pt-36 pb-20"
     >
       {/* Animated background: mouse-reactive particle network + soft gradient glows */}
       <div className="absolute inset-0 -z-20 grid-bg" aria-hidden="true" />
