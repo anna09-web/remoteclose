@@ -13,4 +13,4 @@
 //   3. Paste it below.
 //
 // TODO: connect Formspree here.
-export const FORM_ENDPOINT = "";
+export const FORM_ENDPOINT = "https://formspree.io/f/xrewzool";
