@@ -22,19 +22,24 @@ npm run build
 - `src/components/` — page sections (Hero, Stats, Curriculum, ApplicationForm, etc.)
 - `src/pages/` — Terms of Use and Privacy Policy pages (hash-routed at `#/terms` and `#/privacy`)
 - `src/lib/content.ts` — editable site copy: stats, curriculum, testimonials, contact email
-- `src/lib/typeform.ts` — Typeform integration point for the application form
+- `src/lib/form.ts` — form submission backend config for the application form
 
-## Connecting Typeform
+## Connecting the application form backend
 
 The application form (`src/components/ApplicationForm.tsx`) currently
-validates input client-side and simulates a submission. To wire it up to
-Typeform:
+validates input client-side and simulates a submission.
 
-1. Set `TYPEFORM_ENDPOINT` in `src/lib/typeform.ts` to a backend proxy
-   endpoint that forwards submissions to the Typeform API (don't call
-   Typeform's API directly from the browser — it requires a secret key).
-2. Alternatively, set `USE_TYPEFORM_EMBED = true` and swap in an embedded/
-   hosted Typeform instead of the custom form.
+We use [Formspree](https://formspree.io) rather than Typeform: Typeform's
+API has no endpoint to create a response from external data (responses can
+only be created by someone filling out the Typeform-hosted form itself),
+so it can't act as a backend for our custom multi-step form. Formspree
+accepts a plain JSON POST and forwards it to your inbox.
 
-See the `TODO: connect Typeform here` comment in `ApplicationForm.tsx` for
-the exact spot to wire this up.
+To connect it:
+
+1. Create a form at [formspree.io](https://formspree.io) (free tier works).
+2. Copy its endpoint, e.g. `https://formspree.io/f/abcd1234`.
+3. Set `FORM_ENDPOINT` in `src/lib/form.ts` to that URL.
+
+See the `TODO: connect Formspree here` comment in `ApplicationForm.tsx` for
+the exact spot this is wired up.

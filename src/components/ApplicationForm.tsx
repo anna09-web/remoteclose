@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, Loader2, ShieldAlert, ChevronLeft } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import MagneticButton from "./MagneticButton";
-import { TYPEFORM_ENDPOINT } from "../lib/typeform";
+import { FORM_ENDPOINT } from "../lib/form";
 
 interface FormState {
   fullName: string;
@@ -141,24 +141,18 @@ export default function ApplicationForm() {
     setSubmitError("");
 
     try {
-      // TODO: connect Typeform here.
-      // Once TYPEFORM_ENDPOINT is configured (via a backend proxy that
-      // holds the Typeform API key), replace this block with a POST of
-      // `values` to that endpoint, e.g.:
-      //
-      //   const response = await fetch(TYPEFORM_ENDPOINT, {
-      //     method: "POST",
-      //     headers: { "Content-Type": "application/json" },
-      //     body: JSON.stringify(values),
-      //   });
-      //   if (!response.ok) throw new Error("Submission failed");
-      //
-      // Until then, this simulates a network call so the front-end flow
-      // (validation, loading, success state) can be fully tested.
-      if (TYPEFORM_ENDPOINT) {
-        const response = await fetch(TYPEFORM_ENDPOINT, {
+      // TODO: connect Formspree here.
+      // Set FORM_ENDPOINT in src/lib/form.ts to your Formspree form URL
+      // (e.g. https://formspree.io/f/abcd1234). Until it's set, this
+      // simulates a network call so the front-end flow (validation,
+      // loading, success state) can be fully tested.
+      if (FORM_ENDPOINT) {
+        const response = await fetch(FORM_ENDPOINT, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
           body: JSON.stringify(values),
         });
         if (!response.ok) throw new Error("Submission failed");
